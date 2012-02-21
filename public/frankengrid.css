@@ -1,0 +1,132 @@
+/* CSS RESET by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/ */
+/* added: margin: 0, border-box, overflow hidden, vertical align top */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: visible; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none; }
+
+:focus {
+  outline: 0; }
+
+/* remember to define focus styles! */
+ins {
+  text-decoration: none;
+  /* remember to highlight inserts somehow! */ }
+
+del {
+  text-decoration: line-through; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  /* tables still need 'cellspacing="0"' in the markup */ }
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  /* source: http://sonspring.com/journal/clearing-floats */ }
+
+/* =================
+ * == FRANKENGRID ==
+ * =================
+ * ==== G R I D ====
+ * ================= */
+.onecol, .twocols, .threecols, .fourcols, .fivecols, .sixcols, .sevencols, .eightcols, .ninecols, .tencols, .elevencols, .twelvecols {
+  margin: 0 0 0 0; }
+
+.onecol, .twocols, .threecols, .fourcols, .fivecols, .sixcols, .sevencols, .eightcols, .ninecols, .tencols, .elevencols, .twelvecols {
+  position: static;
+  float: none;
+  clear: both;
+  overflow: hidden;
+  width: 100%; }
+
+.row {
+  overflow: auto;
+  padding: 1.5em; }
+
+@media only screen and (min-width: 800px) {
+  .spacer {
+    display: block; }
+
+  .grid {
+    display: block; }
+
+  .fluid {
+    display: none; }
+
+  .row {
+    overflow: auto; }
+
+  .wrapper {
+    width: 69em;
+    overflow: hidden;
+    margin: 0 auto 0 auto; }
+
+  .onecol, .twocols, .threecols, .fourcols, .fivecols, .sixcols, .sevencols, .eightcols, .ninecols, .tencols, .elevencols, .twelvecols {
+    margin: 0 1.5em 0 1.5em;
+    position: relative;
+    float: left;
+    /* for RTL change float to 'right' */
+    clear: none; }
+
+  .onecol {
+    width: 3em; }
+
+  .twocols {
+    width: 9em; }
+
+  .threecols {
+    width: 15em; }
+
+  .fourcols {
+    width: 21em; }
+
+  .fivecols {
+    width: 27em; }
+
+  .sixcols {
+    width: 33em; }
+
+  .sevencols {
+    width: 39em; }
+
+  .eightcols {
+    width: 45em; }
+
+  .ninecols {
+    width: 51em; }
+
+  .tencols {
+    width: 57em; }
+
+  .elevencols {
+    width: 63em; }
+
+  .twelvecols {
+    width: 69em; } }

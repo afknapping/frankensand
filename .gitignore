@@ -1,0 +1,10 @@
+.DS_Store
+.sass-cache/*
+
+partials/.DS_Store
+partials/.sass-cache/*
+
+public/.DS_Store
+public/partials/*
+public/partials
+public/readme
