@@ -1,12 +1,9 @@
-html {
+body {
+  margin-top: 3em;
   font-family: helvetica;
-  font-size: 1em; }
+  line-height: 1.5; }
 
-div {
-  outline: 1px dotted red;
-  margin-top: 3em; }
-
-p {
+.row {
   margin-top: 3em; }
 
 /* typo */
@@ -25,5 +22,8 @@ h1, h3, h5 {
 h2, h4, h6 {
   font-weight: normal; }
 
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.75em; }
+
 p {
-  margin-top: 3em; }
+  margin-bottom: 0.75em; }

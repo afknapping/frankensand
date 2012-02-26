@@ -2,15 +2,19 @@
 @import "partials/fg-mixins-and-vars"
 
 html
+
+body
+  margin-top: $unit * 1
   font-family: helvetica
-  font-size: 1em
+  // font-size: 1em
+  line-height: 1.5
+
+.row
+  margin-top: $unit * 1
 
 div
-  outline: 1px dotted red
-  margin-top: $unit
-p
-  margin-top: $unit
-  // padding: $unit
+  // outline: 1px dotted red
+  //margin-top: $unit
 
 /* typo
 h1, h2
@@ -25,6 +29,9 @@ h1, h3, h5
 h2, h4, h6
   font-weight: normal
 
+h1, h2, h3, h4, h5, h6
+  margin-bottom: $baseline /2
+
 p
-  margin-top: $unit
+  margin-bottom: $baseline /2
   // padding: $unit

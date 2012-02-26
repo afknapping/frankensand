@@ -1,5 +1,5 @@
 
-- page_title = 'welcome to the frankengrid, program!'
+- page_title = 'The Frankengrid – leaving pixels behind for good.'
 
 !!!5
 %html
@@ -17,37 +17,75 @@
   %body
     .container
       .row
-        %h1 The Frankengrid
+        .fourcol
+          %p Leaving pixels behing for good:
+        .eightcol.last
+          %h1 The Frankengrid
         .twelvecol
           .fourcol
-            %h5 responsive twelve-column grid.
-            fluid-mode for mobile.
-            markup is backward-compatible to the
-            %a{ :href => "1140index.html" } 1140 grid.
+            %h5 Responsive twelve-column grid.
+            %p
+              Resize this window!
+            %p 
+              Fluid-mode for mobile.
+            %p 
+              Markup is backward-compatible to the 1140 grid:
+              %a{ :href => "1140index.html" } 
+                see the 1140 rendered with the frankengrid
           .fourcol
-            %h5 fully em-based
-            allows css-based zooming for different screen-resolutions while keeping layout.
-            allows nesting!
+            %h5
+              Fully 
+              %code 
+                em
+              \-based
+            
+            %p
+              Allows css-based zooming for different screen-resolutions while keeping layout.
+            %p 
+              Allows nesting!
+            %p
+              Allows to work with a responsive (!) baseline-grid.
           .fourcol.last
-            %h5 mobile-first
+            %h5 Mobile first.
+            CSS for mobile resources is delivered first to save bandwidth and requests. Resources for other resolutions are loaded via media-queries.
 
     .container
       .row
-        %h5 Nesting
+        %h3 Nesting
         .twelvecol
-          hello world (a .twelvecol)
+          hello world (this is a 
+          %code .twelvecol
+          div)
       .row
         .eightcol
-          .fourcol .fourcol 01 (inside .eightcol)
-          .fourcol.last .fourcol 02 (inside .eightcol) (also needs last)
+          .fourcol 
+            %code .fourcol
+            01 (inside 
+            %code .eightcol
+            )
+          .fourcol.last
+            %code .fourcol
+            02 (inside 
+            %code .eightcol
+            ) (also needs last)
         .fourcol.last
-          3 (next to .eightcol) (also needs last)
+          %code .fourcol
+          03 (next to 
+          %code .eightcol
+          ) (also needs last)
 
-    .container
       .row
-        %h1 heading 1
-        %h2 heading 2
-        %h3 heading 3
-        %h4 heading 4
-        %h5 heading 5
-        %h6 heading 6
+        .twelvecol
+          %p
+            This nesting of columns within columns is not possible with the 1140 due to its percentage-based columns.
+          %p
+            %p That's the reason the Frankengrid exists.
+
+            %p
+              Feedback is very welcome on
+              %a{ :href => 'https://github.com/filtercake/frankengrid'}
+                github.
+
+
+
+

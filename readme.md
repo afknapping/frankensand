@@ -9,6 +9,6 @@ update feb 26: it works and is backwards compatible to the [1140 Grid](http://cs
 
 clone
 
-run stasis
+stasis
 
 goto localhost

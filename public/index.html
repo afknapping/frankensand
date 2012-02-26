@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>
-      welcome to the frankengrid, program!
+      The Frankengrid – leaving pixels behind for good.
     </title>
     <meta content='width=device-width, initial-scale=1.0' name='viewport' />
     <link href='frankengrid.css' rel='stylesheet' />
@@ -12,50 +12,97 @@
   <body>
     <div class='container'>
       <div class='row'>
-        <h1>The Frankengrid</h1>
+        <div class='fourcol'>
+          <p>Leaving pixels behing for good:</p>
+        </div>
+        <div class='eightcol last'>
+          <h1>The Frankengrid</h1>
+        </div>
         <div class='twelvecol'>
           <div class='fourcol'>
-            <h5>responsive twelve-column grid.</h5>
-            fluid-mode for mobile.
-            markup is backward-compatible to the
-            <a href='1140index.html'>1140 grid.</a>
+            <h5>Responsive twelve-column grid.</h5>
+            <p>
+              Resize this window!
+            </p>
+            <p>
+              Fluid-mode for mobile.
+            </p>
+            <p>
+              Markup is backward-compatible to the 1140 grid:
+              <a href='1140index.html'>
+                see the 1140 rendered with the frankengrid
+              </a>
+            </p>
           </div>
           <div class='fourcol'>
-            <h5>fully em-based</h5>
-            allows css-based zooming for different screen-resolutions while keeping layout.
-            allows nesting!
+            <h5>
+              Fully
+              <code>em</code>
+              -based
+            </h5>
+            <p>
+              Allows css-based zooming for different screen-resolutions while keeping layout.
+            </p>
+            <p>
+              Allows nesting!
+            </p>
+            <p>
+              Allows to work with a responsive (!) baseline-grid.
+            </p>
           </div>
           <div class='fourcol last'>
-            <h5>mobile-first</h5>
+            <h5>Mobile first.</h5>
+            CSS for mobile resources is delivered first to save bandwidth and requests. Resources for other resolutions are loaded via media-queries.
           </div>
         </div>
       </div>
     </div>
     <div class='container'>
       <div class='row'>
-        <h5>Nesting</h5>
+        <h3>Nesting</h3>
         <div class='twelvecol'>
-          hello world (a .twelvecol)
+          hello world (this is a
+          <code>.twelvecol</code>
+          div)
         </div>
       </div>
       <div class='row'>
         <div class='eightcol'>
-          <div class='fourcol'>.fourcol 01 (inside .eightcol)</div>
-          <div class='fourcol last'>.fourcol 02 (inside .eightcol) (also needs last)</div>
+          <div class='fourcol'>
+            <code>.fourcol</code>
+            01 (inside
+            <code>.eightcol</code>
+            )
+          </div>
+          <div class='fourcol last'>
+            <code>.fourcol</code>
+            02 (inside
+            <code>.eightcol</code>
+            ) (also needs last)
+          </div>
         </div>
         <div class='fourcol last'>
-          3 (next to .eightcol) (also needs last)
+          <code>.fourcol</code>
+          03 (next to
+          <code>.eightcol</code>
+          ) (also needs last)
         </div>
       </div>
-    </div>
-    <div class='container'>
       <div class='row'>
-        <h1>heading 1</h1>
-        <h2>heading 2</h2>
-        <h3>heading 3</h3>
-        <h4>heading 4</h4>
-        <h5>heading 5</h5>
-        <h6>heading 6</h6>
+        <div class='twelvecol'>
+          <p>
+            This nesting of columns within columns is not possible with the 1140 due to its percentage-based columns.
+          </p>
+          <p>
+            <p>That's the reason the Frankengrid exists.</p>
+            <p>
+              Feedback is very welcome on
+              <a href='https://github.com/filtercake/frankengrid'>
+                github.
+              </a>
+            </p>
+          </p>
+        </div>
       </div>
     </div>
   </body>
