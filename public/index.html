@@ -10,6 +10,53 @@
     <meta charset='UTF-8' />
   </head>
   <body>
-    hello world
+    <div class='container'>
+      <div class='row'>
+        <h1>The Frankengrid</h1>
+        <div class='twelvecol'>
+          <div class='fourcol'>
+            <h5>responsive twelve-column grid.</h5>
+            fluid-mode for mobile.
+            markup is backward-compatible to the
+            <a href='1140index.html'>1140 grid.</a>
+          </div>
+          <div class='fourcol'>
+            <h5>fully em-based</h5>
+            allows css-based zooming for different screen-resolutions while keeping layout.
+            allows nesting!
+          </div>
+          <div class='fourcol last'>
+            <h5>mobile-first</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='container'>
+      <div class='row'>
+        <h5>Nesting</h5>
+        <div class='twelvecol'>
+          hello world (a .twelvecol)
+        </div>
+      </div>
+      <div class='row'>
+        <div class='eightcol'>
+          <div class='fourcol'>.fourcol 01 (inside .eightcol)</div>
+          <div class='fourcol last'>.fourcol 02 (inside .eightcol) (also needs last)</div>
+        </div>
+        <div class='fourcol last'>
+          3 (next to .eightcol) (also needs last)
+        </div>
+      </div>
+    </div>
+    <div class='container'>
+      <div class='row'>
+        <h1>heading 1</h1>
+        <h2>heading 2</h2>
+        <h3>heading 3</h3>
+        <h4>heading 4</h4>
+        <h5>heading 5</h5>
+        <h6>heading 6</h6>
+      </div>
+    </div>
   </body>
 </html>

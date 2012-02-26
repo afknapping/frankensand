@@ -53,80 +53,129 @@ table {
 
 /* =================
  * == FRANKENGRID ==
- * =================
- * ==== G R I D ====
  * ================= */
-.onecol, .twocols, .threecols, .fourcols, .fivecols, .sixcols, .sevencols, .eightcols, .ninecols, .tencols, .elevencols, .twelvecols {
+/* fluid layout served as default. */
+/* since ie6 does not recognize media queries, this is also a lame fallback (in case there is not even JS present to add media css3-mediaqueries): the layout is lost, but the content is displayed in a readable way */
+/* MARGINS, PADDINGS: */
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
   margin: 0 0 0 0; }
 
-.onecol, .twocols, .threecols, .fourcols, .fivecols, .sixcols, .sevencols, .eightcols, .ninecols, .tencols, .elevencols, .twelvecols {
-  position: static;
+.container {
+  width: 100%; }
+
+.row {
+  padding: 5%;
+  /* instead setting the mobile base body to 90%. */ }
+
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
   float: none;
   clear: both;
   overflow: hidden;
   width: 100%; }
 
-.row {
-  overflow: auto;
-  padding: 1.5em; }
+img, object, embed {
+  max-width: 100%;
+  width: 100%; }
 
+img {
+  height: auto; }
+
+/* the grid */
+/* the whole grid conists of 69 ems width */
+/* twelve columns at 3em each and 11 gutters with 3em each */
 @media only screen and (min-width: 800px) {
-  .spacer {
-    display: block; }
-
+  /* helper classes to show/hide */
   .grid {
     display: block; }
 
   .fluid {
     display: none; }
 
+  /* container: whole width to work with different backgrounds/colors/etc. */
+  /* this is the part where you put your twelve columns in */
   .row {
-    overflow: auto; }
-
-  .wrapper {
     width: 69em;
     overflow: hidden;
-    margin: 0 auto 0 auto; }
+    margin: 0 auto 0 auto;
+    overflow: auto;
+    padding: 0; }
 
-  .onecol, .twocols, .threecols, .fourcols, .fivecols, .sixcols, .sevencols, .eightcols, .ninecols, .tencols, .elevencols, .twelvecols {
-    margin: 0 1.5em 0 1.5em;
+  .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
+    margin: 0 3em 0 0;
     position: relative;
     float: left;
     /* for RTL change float to 'right' */
     clear: none; }
 
+  .twelvecol {
+    margin: 0 0 0 0; }
+
+  .last {
+    margin-right: 0; }
+
   .onecol {
     width: 3em; }
 
-  .twocols {
+  .twocol {
     width: 9em; }
 
-  .threecols {
+  .threecol {
     width: 15em; }
 
-  .fourcols {
+  .fourcol {
     width: 21em; }
 
-  .fivecols {
+  .fivecol {
     width: 27em; }
 
-  .sixcols {
+  .sixcol {
     width: 33em; }
 
-  .sevencols {
+  .sevencol {
     width: 39em; }
 
-  .eightcols {
+  .eightcol {
     width: 45em; }
 
-  .ninecols {
+  .ninecol {
     width: 51em; }
 
-  .tencols {
+  .tencol {
     width: 57em; }
 
-  .elevencols {
+  .elevencol {
     width: 63em; }
 
-  .twelvecols {
-    width: 69em; } }
+  .twelvecol {
+    width: 69em; }
+
+  img, object, embed {
+    max-width: 100%;
+    width: 100%; }
+
+  img {
+    height: auto; } }
+@media handheld, only screen and (min-width: 800px) {
+  body {
+    font-size: 0.7em; } }
+@media handheld, only screen and (min-width: 950px) {
+  body {
+    font-size: 0.8em; } }
+@media handheld, only screen and (min-width: 1050px) {
+  body {
+    font-size: 0.9em; } }
+@media handheld, only screen and (min-width: 1150px) {
+  body {
+    font-size: 1em; } }
+@media handheld, only screen and (min-width: 1250px) {
+  body {
+    font-size: 1em; } }
+@media handheld, only screen and (min-width: 1350px) {
+  body {
+    font-size: 1.1em; } }
+@media handheld, only screen and (min-width: 1500px) {
+  body {
+    font-size: 1.2em; } }
+@media handheld, only screen and (min-width: 1600px) {
+  body {
+    font-size: 1.3em; } }

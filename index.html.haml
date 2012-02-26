@@ -15,4 +15,39 @@
       
 
   %body
-    hello world
+    .container
+      .row
+        %h1 The Frankengrid
+        .twelvecol
+          .fourcol
+            %h5 responsive twelve-column grid.
+            fluid-mode for mobile.
+            markup is backward-compatible to the
+            %a{ :href => "1140index.html" } 1140 grid.
+          .fourcol
+            %h5 fully em-based
+            allows css-based zooming for different screen-resolutions while keeping layout.
+            allows nesting!
+          .fourcol.last
+            %h5 mobile-first
+
+    .container
+      .row
+        %h5 Nesting
+        .twelvecol
+          hello world (a .twelvecol)
+      .row
+        .eightcol
+          .fourcol .fourcol 01 (inside .eightcol)
+          .fourcol.last .fourcol 02 (inside .eightcol) (also needs last)
+        .fourcol.last
+          3 (next to .eightcol) (also needs last)
+
+    .container
+      .row
+        %h1 heading 1
+        %h2 heading 2
+        %h3 heading 3
+        %h4 heading 4
+        %h5 heading 5
+        %h6 heading 6

@@ -1,94 +1,145 @@
 /* =================
   == FRANKENGRID ==
   =================
-  ==== G R I D ====
-  =================
+
 
 @import "fg-mixins-and-vars"
 
+/* fluid layout served as default.
+/* since ie6 does not recognize media queries, this is also a lame fallback (in case there is not even JS present to add media css3-mediaqueries): the layout is lost, but the content is displayed in a readable way
 
-// fluid layout served as default.
-// since ie6 does not recognize media queries, this is also the superlamest fallback (in case there is not even JS present to add media css3-mediaqueries): the layout is lost, but the content is displayed in a readable way
+/* MARGINS, PADDINGS:
 
 
-// MARGINS, PADDINGS:
 
-.onecol, .twocols, .threecols, .fourcols, .fivecols, .sixcols, .sevencols, .eightcols, .ninecols, .tencols, .elevencols, .twelvecols
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol
   margin: 0 0 0 0
 
-.onecol, .twocols, .threecols, .fourcols, .fivecols, .sixcols, .sevencols, .eightcols, .ninecols, .tencols, .elevencols, .twelvecols
-  position: static
+
+.container
+  width: 100%
+
+.row
+  padding: 5%
+  /* instead setting the mobile base body to 90%.
+
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol
+  // position: static
   float: none
-  // for RTL change float to 'right'
   clear: both
   overflow: hidden
   width: 100%
 
-.row
-  overflow: auto
-  padding: $baseline
+
+img, object, embed
+  max-width: 100%
+  width: 100%
 
 
+img
+  height: auto
 
-// the grid
-// the whole grid conists of 69 ems width
-// twelve columns at 3em each and 11 gutters with 3em each
+/* the grid
+/* the whole grid conists of 69 ems width
+/* twelve columns at 3em each and 11 gutters with 3em each
 
 @media only screen and (min-width: 800px)
 
-  .spacer
-    display: block
+
+  /* helper classes to show/hide
   .grid
     display: block
   .fluid
     display: none
 
-
+  /* container: whole width to work with different backgrounds/colors/etc.
+  .container
+  /* this is the part where you put your twelve columns in
   .row
-    // padding: $baseline 0 $baseline 0
-    overflow: auto
-
-  .wrapper
-    width: 69em
+    width: $unit * 23
     // change above to $units etc
     overflow: hidden
     margin: 0 auto 0 auto
+    overflow: auto
+    padding: 0
 
-  .onecol, .twocols, .threecols, .fourcols, .fivecols, .sixcols, .sevencols, .eightcols, .ninecols, .tencols, .elevencols, .twelvecols
-    margin: 0 $unit/2 0 $unit/2
+
+  .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol
+    margin: 0 $unit 0 0
     position: relative
     float: left
     /* for RTL change float to 'right' */
     clear: none
 
-  // .twelvecols:last-child
-      // margin-bottom: 0
-    
+  .twelvecol
+    margin: 0 0 0 0
+
+  // this class removes the right margin, so they fit onto the .row
+  .last
+    margin-right: 0
+
+
 
   .onecol
     width: $unit
-  .twocols
+  .twocol
     width: $unit * 3
-  .threecols
+  .threecol
     width: $unit * 5
-  .fourcols
+  .fourcol
     width: $unit * 7
-  .fivecols
+  .fivecol
     width: $unit * 9
-  .sixcols
+  .sixcol
     width: $unit * 11
-  .sevencols
+  .sevencol
     width: $unit * 13
-  .eightcols
+  .eightcol
     width: $unit * 15
-  .ninecols
+  .ninecol
     width: $unit * 17
-  .tencols 
+  .tencol 
     width: $unit * 19
-  .elevencols
+  .elevencol
     width: $unit * 21
-  .twelvecols
+  .twelvecol
     width: $unit * 23
 
+  img, object, embed
+    max-width: 100%
+    width: 100%
 
+  img
+    height: auto
 
+@media handheld, only screen and (min-width: 800px)
+  body
+    font-size: 0.7em
+
+@media handheld, only screen and (min-width: 950px)
+  body
+    font-size: 0.8em
+
+@media handheld, only screen and (min-width: 1050px)
+  body
+    font-size: 0.9em
+
+@media handheld, only screen and (min-width: 1150px)
+  body
+    font-size: 1em
+
+@media handheld, only screen and (min-width: 1250px)
+  body
+    font-size: 1em
+
+@media handheld, only screen and (min-width: 1350px)
+  body
+    font-size: 1.1em
+
+@media handheld, only screen and (min-width: 1500px)
+  body
+    font-size: 1.2em
+
+@media handheld, only screen and (min-width: 1600px)
+  body
+    font-size: 1.3em
