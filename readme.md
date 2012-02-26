@@ -4,3 +4,11 @@ the frankengrid is currently used on filtercake.com in its "research version". y
 ---
 
 update feb 26: it works and is backwards compatible to the [1140 Grid](http://cssgrid.net/).
+
+---
+
+clone
+
+run stasis
+
+goto localhost
