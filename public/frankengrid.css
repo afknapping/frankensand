@@ -94,14 +94,14 @@ img {
   /* container: whole width to work with different backgrounds/colors/etc. */
   /* this is the part where you put your twelve columns in */
   .row {
-    width: 69em;
+    width: 46em;
     overflow: hidden;
     margin: 0 auto 0 auto;
     overflow: auto;
     padding: 0; }
 
   .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
-    margin: 0 3em 0 0;
+    margin: 0 2em 0 0;
     position: relative;
     float: left;
     /* for RTL change float to 'right' */
@@ -114,40 +114,40 @@ img {
     margin-right: 0; }
 
   .onecol {
-    width: 3em; }
+    width: 2em; }
 
   .twocol {
-    width: 9em; }
+    width: 6em; }
 
   .threecol {
-    width: 15em; }
+    width: 10em; }
 
   .fourcol {
-    width: 21em; }
+    width: 14em; }
 
   .fivecol {
-    width: 27em; }
+    width: 18em; }
 
   .sixcol {
-    width: 33em; }
+    width: 22em; }
 
   .sevencol {
-    width: 39em; }
+    width: 26em; }
 
   .eightcol {
-    width: 45em; }
+    width: 30em; }
 
   .ninecol {
-    width: 51em; }
+    width: 34em; }
 
   .tencol {
-    width: 57em; }
+    width: 38em; }
 
   .elevencol {
-    width: 63em; }
+    width: 42em; }
 
   .twelvecol {
-    width: 69em; }
+    width: 46em; }
 
   img, object, embed {
     max-width: 100%;
@@ -156,26 +156,26 @@ img {
   img {
     height: auto; } }
 @media handheld, only screen and (min-width: 800px) {
-  body {
-    font-size: 0.7em; } }
-@media handheld, only screen and (min-width: 950px) {
-  body {
+  html {
     font-size: 0.8em; } }
+@media handheld, only screen and (min-width: 950px) {
+  html {
+    font-size: 0.65em; } }
 @media handheld, only screen and (min-width: 1050px) {
-  body {
-    font-size: 0.9em; } }
+  html {
+    font-size: 0.7; } }
 @media handheld, only screen and (min-width: 1150px) {
-  body {
-    font-size: 1em; } }
+  html {
+    font-size: 0.77em; } }
 @media handheld, only screen and (min-width: 1250px) {
-  body {
-    font-size: 1em; } }
+  html {
+    font-size: 0.83em; } }
 @media handheld, only screen and (min-width: 1350px) {
-  body {
-    font-size: 1.1em; } }
+  html {
+    font-size: 0.95em; } }
 @media handheld, only screen and (min-width: 1500px) {
-  body {
-    font-size: 1.2em; } }
+  html {
+    font-size: 1em; } }
 @media handheld, only screen and (min-width: 1600px) {
-  body {
-    font-size: 1.3em; } }
+  html {
+    font-size: 1.1em; } }

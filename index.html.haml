@@ -20,10 +20,10 @@
         .fourcol
           %p Leaving pixels behing for good:
         .eightcol.last
-          %h1 The Frankengrid
+          %h1 The Frankengrid<br>zweite Zeile
         .twelvecol
           .fourcol
-            %h5 Responsive twelve-column grid.
+            %h5 Responsive twelve-column grid.<br>zweite Zeile
             %p
               Resize this window!
             %p 
@@ -37,7 +37,7 @@
               Fully 
               %code 
                 em
-              \-based
+              \-based<br>zweite Zeile
             
             %p
               Allows css-based zooming for different screen-resolutions while keeping layout.
@@ -46,12 +46,12 @@
             %p
               Allows to work with a responsive (!) baseline-grid.
           .fourcol.last
-            %h5 Mobile first.
+            %h5 Mobile first.<br>zweite Zeile
             CSS for mobile resources is delivered first to save bandwidth and requests. Resources for other resolutions are loaded via media-queries.
 
     .container
       .row
-        %h3 Nesting
+        %h3 Nesting<br>zweite Zeile
         .twelvecol
           hello world (this is a 
           %code .twelvecol
@@ -85,6 +85,10 @@
               Feedback is very welcome on
               %a{ :href => 'https://github.com/filtercake/frankengrid'}
                 github.
+
+      .row
+        .twelvecol
+          %h1 headline<br>line2
 
 
 
