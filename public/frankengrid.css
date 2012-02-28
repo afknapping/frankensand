@@ -54,6 +54,9 @@ table {
 /* =================
  * == FRANKENGRID ==
  * ================= */
+body {
+  line-height: 1.35rem; }
+
 /* fluid layout served as default. */
 /* since ie6 does not recognize media queries, this is also a lame fallback (in case there is not even JS present to add media css3-mediaqueries): the layout is lost, but the content is displayed in a readable way */
 /* MARGINS, PADDINGS: */
@@ -94,8 +97,7 @@ img {
   /* container: whole width to work with different backgrounds/colors/etc. */
   /* this is the part where you put your twelve columns in */
   .row {
-    width: 46em;
-    overflow: hidden;
+    width: 50.6em;
     margin: 0 auto 0 auto;
     overflow: auto;
     padding: 0; }
@@ -114,68 +116,114 @@ img {
     margin-right: 0; }
 
   .onecol {
-    width: 2em; }
+    width: 2.2em; }
 
   .twocol {
-    width: 6em; }
+    width: 6.6em; }
 
   .threecol {
-    width: 10em; }
+    width: 11em; }
 
   .fourcol {
-    width: 14em; }
+    width: 15.4em; }
 
   .fivecol {
-    width: 18em; }
+    width: 19.8em; }
 
   .sixcol {
-    width: 22em; }
+    width: 24.2em; }
 
   .sevencol {
-    width: 26em; }
+    width: 28.6em; }
 
   .eightcol {
-    width: 30em; }
+    width: 33em; }
 
   .ninecol {
-    width: 34em; }
+    width: 37.4em; }
 
   .tencol {
-    width: 38em; }
+    width: 41.8em; }
 
   .elevencol {
-    width: 42em; }
+    width: 46.2em; }
 
   .twelvecol {
-    width: 46em; }
+    width: 50.6em; }
+
+  .padded {
+    padding: 0.675rem;
+    margin-bottom: 1.35rem; }
 
   img, object, embed {
     max-width: 100%;
     width: 100%; }
 
   img {
-    height: auto; } }
+    height: auto; }
+
+  /* typography */
+  h1, h2 {
+    font-size: 3.8rem;
+    line-height: 4.05rem;
+    position: relative;
+    top: 0.4rem;
+    left: -0.2rem; }
+
+  h3, h4 {
+    font-size: 2.6rem;
+    line-height: 2.7rem;
+    position: relative;
+    top: 0.15rem;
+    left: -0.1rem; }
+
+  h5, h6 {
+    font-size: 1.3rem;
+    line-height: 1.35rem;
+    position: relative;
+    top: 0.1rem; }
+
+  h1, h3, h5 {
+    font-weight: bold; }
+
+  h2, h4, h6 {
+    font-weight: normal; }
+
+  h1, h2 {
+    margin-bottom: 2.7rem; }
+
+  h3, h4, h5, h6 {
+    margin-bottom: 1.35rem; }
+
+  p {
+    margin-bottom: 1.35rem; }
+
+  blockquote {
+    padding: 0 0 0 0.675rem;
+    margin-bottom: 1.35rem;
+    font-style: italic;
+    border-left: 2px solid gray; }
+
+  blockquote em {
+    font-style: normal; } }
 @media handheld, only screen and (min-width: 800px) {
   html {
-    font-size: 0.8em; } }
-@media handheld, only screen and (min-width: 950px) {
-  html {
-    font-size: 0.65em; } }
-@media handheld, only screen and (min-width: 1050px) {
-  html {
-    font-size: 0.7; } }
-@media handheld, only screen and (min-width: 1150px) {
-  html {
-    font-size: 0.77em; } }
-@media handheld, only screen and (min-width: 1250px) {
-  html {
-    font-size: 0.83em; } }
-@media handheld, only screen and (min-width: 1350px) {
-  html {
-    font-size: 0.95em; } }
-@media handheld, only screen and (min-width: 1500px) {
+    font-size: 0.9em; } }
+@media handheld, only screen and (min-width: 900px) {
   html {
     font-size: 1em; } }
-@media handheld, only screen and (min-width: 1600px) {
+@media handheld, only screen and (min-width: 950px) {
+  html {
+    font-size: 1.05em; } }
+@media handheld, only screen and (min-width: 1000px) {
   html {
     font-size: 1.1em; } }
+@media handheld, only screen and (min-width: 1050px) {
+  html {
+    font-size: 1.15em; } }
+@media handheld, only screen and (min-width: 1100px) {
+  html {
+    font-size: 1.2em; } }
+@media handheld, only screen and (min-width: 1200px) {
+  html {
+    font-size: 1.3em; } }

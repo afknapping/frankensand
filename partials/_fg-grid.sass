@@ -5,6 +5,10 @@
 
 @import "fg-mixins-and-vars"
 
+body
+  line-height: 1.35rem
+
+
 /* fluid layout served as default.
 /* since ie6 does not recognize media queries, this is also a lame fallback (in case there is not even JS present to add media css3-mediaqueries): the layout is lost, but the content is displayed in a readable way
 
@@ -56,9 +60,9 @@ img
   .container
   /* this is the part where you put your twelve columns in
   .row
-    width: $unit * 23
+    width: 2.2em * 23
     // change above to $units etc
-    overflow: hidden
+    // overflow: hidden
     margin: 0 auto 0 auto
     overflow: auto
     padding: 0
@@ -81,29 +85,33 @@ img
 
 
   .onecol
-    width: $unit
+    width: 2.2em
   .twocol
-    width: $unit * 3
+    width: 2.2em * 3
   .threecol
-    width: $unit * 5
+    width: 2.2em * 5
   .fourcol
-    width: $unit * 7
+    width: 2.2em * 7
   .fivecol
-    width: $unit * 9
+    width: 2.2em * 9
   .sixcol
-    width: $unit * 11
+    width: 2.2em * 11
   .sevencol
-    width: $unit * 13
+    width: 2.2em * 13
   .eightcol
-    width: $unit * 15
+    width: 2.2em * 15
   .ninecol
-    width: $unit * 17
+    width: 2.2em * 17
   .tencol 
-    width: $unit * 19
+    width: 2.2em * 19
   .elevencol
-    width: $unit * 21
+    width: 2.2em * 21
   .twelvecol
-    width: $unit * 23
+    width: 2.2em * 23
+
+  .padded
+    padding: 0.675rem
+    margin-bottom: 1.35rem
 
   img, object, embed
     max-width: 100%
@@ -112,34 +120,73 @@ img
   img
     height: auto
 
+
+  /* typography
+  h1, h2
+    font-size: 3.8rem
+    line-height: 1.35rem * 3
+    position: relative
+    top: 0.4rem
+    left: -0.2rem
+  h3, h4
+    font-size: 2.6rem
+    line-height: 1.35rem * 2
+    position: relative
+    top: 0.15rem
+    left: -0.1rem
+  h5, h6
+    font-size: 1.3rem
+    line-height: 1.35rem
+    position: relative
+    top: 0.1rem
+
+  h1, h3, h5
+    font-weight: bold
+  h2, h4, h6
+    font-weight: normal
+
+  h1, h2
+    margin-bottom: 1.35rem * 2
+  h3, h4, h5, h6
+    margin-bottom: 1.35rem
+
+  p
+    margin-bottom: 1.35rem
+
+
+  blockquote
+    padding: 0 0 0 0.675rem
+    margin-bottom: 1.35rem
+    font-style: italic
+    border-left: 2px solid gray
+  
+  blockquote em
+    font-style: normal
+
 @media handheld, only screen and (min-width: 800px)
   html
-    font-size: 0.8em
+    font-size: 0.9em
 
-@media handheld, only screen and (min-width: 950px)
-  html
-    font-size: 0.65em
-
-@media handheld, only screen and (min-width: 1050px)
-  html
-    font-size: 0.7
-em
-@media handheld, only screen and (min-width: 1150px)
-  html
-    font-size: 0.77em
-
-@media handheld, only screen and (min-width: 1250px)
-  html
-    font-size: 0.83em
-
-@media handheld, only screen and (min-width: 1350px)
-  html
-    font-size: 0.95em
-
-@media handheld, only screen and (min-width: 1500px)
+@media handheld, only screen and (min-width: 900px)
   html
     font-size: 1em
 
-@media handheld, only screen and (min-width: 1600px)
+@media handheld, only screen and (min-width: 950px)
+  html
+    font-size: 1.05em
+
+@media handheld, only screen and (min-width: 1000px)
   html
     font-size: 1.1em
+
+@media handheld, only screen and (min-width: 1050px)
+  html
+    font-size: 1.15em
+
+@media handheld, only screen and (min-width: 1100px)
+  html
+    font-size: 1.2em
+
+@media handheld, only screen and (min-width: 1200px)
+  html
+    font-size: 1.3em

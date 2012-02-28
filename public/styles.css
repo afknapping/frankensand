@@ -1,44 +1,13 @@
 body {
   margin-top: 2em;
-  font-family: helvetica;
-  line-height: 1em; }
+  font-family: helvetica; }
 
 .row {
   margin-top: 2em; }
 
-div {
-  outline: 1px dotted red; }
-
-/* typo */
-h1, h2 {
-  font-size: 2.62rem;
-  line-height: 3rem; }
-
-h3, h4 {
-  font-size: 1.62rem;
-  line-height: 2rem; }
-
-h5, h6 {
-  font-size: 1rem; }
-
-h1, h3, h5 {
-  font-weight: bold; }
-
-h2, h4, h6 {
-  font-weight: normal; }
-
-h1, h2 {
-  margin-bottom: 2rem; }
-
-h3, h4, h5, h6 {
-  margin-bottom: 1rem; }
-
-p {
-  margin-bottom: 0.5em; }
+.padded {
+  background-color: rgba(128, 128, 128, 0.8);
+  color: white; }
 
 em {
   font-style: italic; }
-
-blockquote {
-  padding: 0.5em;
-  outline: 1px dotted black; }
