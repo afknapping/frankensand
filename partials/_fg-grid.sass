@@ -27,6 +27,8 @@ body
   padding: 5%
   /* instead setting the mobile base body to 90%.
 
+
+
 .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol
   // position: static
   float: none
@@ -50,6 +52,8 @@ img
 @media only screen and (min-width: 800px)
 
 
+
+
   /* helper classes to show/hide
   .grid
     display: block
@@ -66,16 +70,42 @@ img
     margin: 0 auto 0 auto
     overflow: auto
     padding: 0
+    border: 1 px dotted blue
+
+
+  /* new/borrowed ideas: not .last class, but .first. throwing away the rows or applying .first via css selector. uhm... going for css-selector... 
+  //it's coming from print design, so "page" seems appropiate. roots and stuff.
+  .page 
+    width: 2.2em * 23
+    margin: 0 auto 0 auto
+    overflow: auto
+    padding: 0
+    outline: 1 px dotted green
+
+  /* .row div:first-child
+    margin: 0
+    background-color: hsla(0,100%,50%,0.2)
+    border: 1px solid black
+
+  .eightcol:first-child
+    margin: 0
+    background-color: hsla(0,100%,50%,0.2)
+    border: 1px solid black
+
+  .fourcol:first-child
+    margin: 0
+    background-color: hsla(0,100%,50%,0.2)
+    border: 1px solid black
 
 
   .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol
-    margin: 0 $unit 0 0
+    margin: 0 0 0 $unit 
     position: relative
     float: left
     /* for RTL change float to 'right' */
     clear: none
 
-  .twelvecol
+  // .twelvecol
     margin: 0 0 0 0
 
   // this class removes the right margin, so they fit onto the .row
@@ -92,6 +122,7 @@ img
     width: 2.2em * 5
   .fourcol
     width: 2.2em * 7
+    border: 1px solid yellow
   .fivecol
     width: 2.2em * 9
   .sixcol
@@ -108,6 +139,14 @@ img
     width: 2.2em * 21
   .twelvecol
     width: 2.2em * 23
+
+    // width: 2.2em * 23
+    // change above to $units etc
+    // overflow: hidden
+    margin: 0 auto 0 auto
+    overflow: auto
+    padding: 0
+    border: 1px dotted blue
 
   .padded
     padding: 0.675rem

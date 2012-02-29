@@ -1,0 +1,78 @@
+- page_title = 'The Frankengrid – a test on throwing out last class and applying .'
+
+!!!5
+%html
+  %head
+    %title
+      = page_title
+    %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }
+
+    %link{ :rel => "stylesheet", :href => "frankengrid.css"}
+    %link{ :rel => "stylesheet", :href => "styles.css"}
+
+    %meta{ :charset => "UTF-8" }
+
+
+  %body
+
+    .page
+      .twelvecol
+        .fourcol
+          %h5 
+            headline im eigenen 
+            %code
+              \.fourcol
+            \-mantel
+        .eightcol
+          %h5 
+            headline im eigenen 
+            %code
+              \.eightcol
+            \-mantel
+
+      .twelvecol
+        .eightcol
+          .fourcol
+            a 
+            %code
+              \.fourcol
+            within an
+            %code
+              \.eightcol
+          .fourcol
+            the second
+            %code
+              \.fourcol
+            within the
+            %code
+              \.eightcol
+        .fourcol
+          the third 
+          %code
+            \.fourcol   
+      .twelvecol
+        .fourcol
+          %h5 red: first-children<br>
+          %code
+            \.fourcol:first-child { margin: 0; }<br>
+            \.eightcol:first-child { margin: 0; }
+        .fourcol
+          %h5 normal:
+          %code
+            \.fourcol { margin-left: (gutter); }<br>
+            \.eightcol { margin-left: (gutter); }
+
+
+      .twelvecol
+        .eightcol
+          %h5 wenn eine headline nicht eigenes wrap-div hat, aber über mehrer col-divs spannen soll, bricht es die first-children
+          .fourcol
+            red: first-children<br>
+            %code
+              \.fourcol:first-child { margin: 0; }<br>
+              \.eightcol:first-child { margin: 0; }
+          .fourcol
+            %code
+              \.fourcol { margin-left: (gutter); }<br>
+              \.eightcol { margin-left: (gutter); }
+          

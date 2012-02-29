@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      The Frankengrid – a test on throwing out last class and applying .
+    </title>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    <link href='frankengrid.css' rel='stylesheet' />
+    <link href='styles.css' rel='stylesheet' />
+    <meta charset='UTF-8' />
+  </head>
+  <body>
+    <div class='page'>
+      <div class='twelvecol'>
+        <div class='fourcol'>
+          <h5>
+            headline im eigenen
+            <code>.fourcol</code>
+            -mantel
+          </h5>
+        </div>
+        <div class='eightcol'>
+          <h5>
+            headline im eigenen
+            <code>.eightcol</code>
+            -mantel
+          </h5>
+        </div>
+      </div>
+      <div class='twelvecol'>
+        <div class='eightcol'>
+          <div class='fourcol'>
+            a
+            <code>.fourcol</code>
+            within an
+            <code>.eightcol</code>
+          </div>
+          <div class='fourcol'>
+            the second
+            <code>.fourcol</code>
+            within the
+            <code>.eightcol</code>
+          </div>
+        </div>
+        <div class='fourcol'>
+          the third
+          <code>.fourcol</code>
+        </div>
+      </div>
+      <div class='twelvecol'>
+        <div class='fourcol'>
+          <h5>red: first-children<br></h5>
+          <code>.fourcol:first-child { margin: 0; }<br>
+          .eightcol:first-child { margin: 0; }</code>
+        </div>
+        <div class='fourcol'>
+          <h5>normal:</h5>
+          <code>.fourcol { margin-left: (gutter); }<br>
+          .eightcol { margin-left: (gutter); }</code>
+        </div>
+      </div>
+      <div class='twelvecol'>
+        <div class='eightcol'>
+          <h5>wenn eine headline nicht eigenes wrap-div hat, aber über mehrer col-divs spannen soll, bricht es die first-children</h5>
+          <div class='fourcol'>
+            red: first-children<br>
+            <code>.fourcol:first-child { margin: 0; }<br>
+            .eightcol:first-child { margin: 0; }</code>
+          </div>
+          <div class='fourcol'>
+            <code>.fourcol { margin-left: (gutter); }<br>
+            .eightcol { margin-left: (gutter); }</code>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

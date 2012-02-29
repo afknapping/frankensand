@@ -100,17 +100,37 @@ img {
     width: 50.6em;
     margin: 0 auto 0 auto;
     overflow: auto;
-    padding: 0; }
+    padding: 0;
+    border: 1 px dotted blue; }
+
+  /* new/borrowed ideas: not .last class, but .first. throwing away the rows or applying .first via css selector. uhm... going for css-selector... */
+  .page {
+    width: 50.6em;
+    margin: 0 auto 0 auto;
+    overflow: auto;
+    padding: 0;
+    outline: 1 px dotted green; }
+
+  /* .row div:first-child
+   * margin: 0
+   * background-color: hsla(0,100%,50%,0.2)
+   * border: 1px solid black */
+  .eightcol:first-child {
+    margin: 0;
+    background-color: rgba(255, 0, 0, 0.2);
+    border: 1px solid black; }
+
+  .fourcol:first-child {
+    margin: 0;
+    background-color: rgba(255, 0, 0, 0.2);
+    border: 1px solid black; }
 
   .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
-    margin: 0 2em 0 0;
+    margin: 0 0 0 2em;
     position: relative;
     float: left;
     /* for RTL change float to 'right' */
     clear: none; }
-
-  .twelvecol {
-    margin: 0 0 0 0; }
 
   .last {
     margin-right: 0; }
@@ -125,7 +145,8 @@ img {
     width: 11em; }
 
   .fourcol {
-    width: 15.4em; }
+    width: 15.4em;
+    border: 1px solid yellow; }
 
   .fivecol {
     width: 19.8em; }
@@ -149,7 +170,11 @@ img {
     width: 46.2em; }
 
   .twelvecol {
-    width: 50.6em; }
+    width: 50.6em;
+    margin: 0 auto 0 auto;
+    overflow: auto;
+    padding: 0;
+    border: 1px dotted blue; }
 
   .padded {
     padding: 0.675rem;
